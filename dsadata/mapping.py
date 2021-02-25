@@ -127,7 +127,9 @@ def get_map_panel_layout():
 
     precinct_card = dbc.Card(
         children=bootstrap_stuff.get_floatbox_card_contents(
-            "precinct", "", "Mayor", {}
+            "precinct",
+            "",
+            "Mayor",
         ),
         color="dark",
         outline=True,
