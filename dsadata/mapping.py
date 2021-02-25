@@ -138,7 +138,9 @@ def get_map_panel_layout():
     )
     neighborhood_card = dbc.Card(
         children=bootstrap_stuff.get_floatbox_card_contents(
-            "neighborhood", "", "Mayor", {}
+            "neighborhood",
+            "",
+            "Mayor",
         ),
         color="dark",
         outline=True,
@@ -146,7 +148,7 @@ def get_map_panel_layout():
         className="displayNone",
     )
     zip_card = dbc.Card(
-        children=bootstrap_stuff.get_floatbox_card_contents("zip", "", "Mayor", {}),
+        children=bootstrap_stuff.get_floatbox_card_contents("zip", "", "Mayor"),
         color="dark",
         outline=True,
         id="floatbox-zip",
