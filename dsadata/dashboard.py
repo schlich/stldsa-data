@@ -52,7 +52,7 @@ def init_callbacks(app):
             contest = "Mayor - City of St. Louis"
         contest_name = mec_query.get_standard_contest_name(contest)
         print(contest_name)
-        candidate_df = pd.read_csv("data/candidates_2021-03-02.csv")
+        candidate_df = pd.read_csv("dsadata/static/candidates_2021-03-02.csv")
         contest_candidates_df = candidate_df[candidate_df["Office Sought"] == contest]
         select_options = [{"label": "All candidates", "value": "all"}]
         for index, row in contest_candidates_df.iterrows():
